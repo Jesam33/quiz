@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class=" py-3">
+        <div id="question-container" class=" col-lg-8 col-sm-12  col-md-8 mx-auto col-md-8-fs-6 pt-4 my-4 px-4 bg-white">
+            <p id="prog-ind" class="fs-2 fw-8 ">Question 1: </p>
+            <div id="quest-txt" class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi ut sit quisquam aspernatur consequatur quibusdam est labore, molestias exercitationem corrupti nam perspiciatis? Sunt voluptatum aut ducimus, laudantium ratione ea quae?</div>
+            <div id="options" class="col-lg-12 col-sm-12">
+                <button class="btn w-75" id="opt1"><span class="opt-ind"></span><span id="opt-txt">Lorem ipsum dolor sit amet consectetur</span></button>
+                <button class="btn w-75" id="opt2"><span class="opt-ind"></span><span id="opt-txt">Lorem ipsum dolor sit amet consectetur</span></button>
+                <button class="btn w-75" id="opt3"><span class="opt-ind"></span><span id="opt-txt">Lorem ipsum dolor sit amet consectetur</span></button>
+                <button class="btn w-75" id="opt4"><span class="opt-ind"></span><span id="opt-txt">Lorem ipsum dolor sit amet consectetur</span></button>
+            </div>
+            <div class="container result-sect">
+                <p id="ans-info">No option selected!</p>
+                <div id="btn-cont">
+                    <button id="btn-sub">Submit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside id="result-container" class="container">
+        <div id="result-focus" class="col-lg-12 col-sm-12">
+            <p>You score <span id="score">NAN</span> out of <span id="total">NAN</span></p>
+            <div>
+                <button id="retake">Retake test</button>
+            </div>
+        </div>
+    </aside>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>
