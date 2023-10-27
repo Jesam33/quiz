@@ -26,7 +26,7 @@
             correctIndex : 3
         },
         {
-            questionText : 'How many staes are in "Nigeria" ?',
+            questionText : 'How many states are in "Nigeria" ?',
             options : ['12','36','24','None of the above'],
             correctIndex : 1
         },
@@ -124,15 +124,19 @@
 
 
     submitBtn.addEventListener('click',()=>{
-        allOptions[currentSelection].style.backgroundColor = "green";
+        allOptions[currentSelection].style.backgroundColor = "red";
+        allOptions[questionBank[currentQuestion].correctIndex].style.backgroundColor = "green";
+        
         disableSubmitButton();
         if(currentSelection == questionBank[currentQuestion].correctIndex){
             score++;
-            document.getElementById('ans-info').innerHTML = "Correct";
+            document.getElementById('ans-info').innerHTML = "Correct";  
+            // allOptions[questionBank[currentQuestion]].style.backgroundColor = "red"
         }
         else{
             document.getElementById('ans-info').innerHTML = "Wrong";
-            allOptions[questionBank[currentQuestion].correctIndex].style.backgroundColor = "red";
+            allOptions[questionBank[currentQuestion].correctIndex].style.backgroundColor = "green";
+            // allOptions[currentSelection] = "red";
         }
         setTimeout(()=>{
             allOptions[currentSelection].style.backgroundColor = "#fff";
